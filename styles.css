@@ -1,0 +1,67 @@
+:root {
+  --black: #333;
+  --fb-blue: #3b5998;
+  --insta-pink: #c13584;
+  --twitter-blue: #1da1f2;
+  --yt-red: #f70000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+footer {
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 10px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  padding: 15px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.social-links i {
+  padding: 10px;
+  color: grey;
+}
+
+.logos:hover {
+  transition: 0.4s;
+  transform: translatey(-5px);
+}
+
+.social-links a .fa-facebook:hover {
+  color: var(--fb-blue);
+}
+
+.social-links a .fa-twitter:hover {
+  color: var(--twitter-blue);
+}
+
+.social-links a .fa-instagram:hover {
+  color: var(--insta-pink);
+}
+
+.social-links a .fa-youtube:hover {
+  color: var(--yt-red);
+}
